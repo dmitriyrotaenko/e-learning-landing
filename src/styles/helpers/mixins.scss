@@ -1,0 +1,9 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fluid-typo($max, $min) {
+  font-size: fluid($max, $min);
+}
