@@ -5,21 +5,35 @@
   "scripts": {
     "start": "minista",
     "build": "minista build",
-    "preview": "minista preview"
+    "preview": "minista preview",
+    "lint": "eslint .",
+    "stylelint": "npx stylelint \"**/*.scss\"",
+    "lint:fix": "eslint . --fix && npx stylelint \"**/*.scss\" --fix"
   },
   "prettier": {
     "semi": false
   },
   "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/eslint-parser": "^7.27.0",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "@eslint/js": "^8.0.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.5",
     "minista": "^3.1.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.86.3"
+    "sass": "^1.86.3",
+    "semistandard": "^17.0.0",
+    "stylelint": "^16.18.0",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-config-standard-scss": "^14.0.0"
   },
   "dependencies": {
     "@a1rth/css-normalize": "^1.1.9",
     "classnames": "^2.5.1",
-    "i": "^0.3.7",
-    "npm": "^11.2.0"
+    "npm": "^11.2.0",
+    "stylelint-scss": "^6.11.1"
   }
 }

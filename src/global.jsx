@@ -1,16 +1,15 @@
 import '@/styles';
 
-import { Head } from "minista"
-import Header from "@/layout/Header";
-import PromoBanner from "@/layout/PromoBanner";
+import { Head } from 'minista';
+import Header from '@/layout/Header';
+import PromoBanner from '@/layout/PromoBanner';
 
-export default props => {
+const Global = props => {
 
   const {
     title,
     children
   } = props;
-
 
   return (
     <>
@@ -27,5 +26,7 @@ export default props => {
       {/*</Content>*/}
       {/*<Footer />*/}
     </>
-  )
-}
+  );
+};
+
+export default Global;

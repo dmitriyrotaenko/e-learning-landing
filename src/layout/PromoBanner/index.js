@@ -1,3 +1,3 @@
-import PromoBanner from './PromoBanner.jsx'
+import PromoBanner from './PromoBanner.jsx';
 
-export default PromoBanner
+export default PromoBanner;

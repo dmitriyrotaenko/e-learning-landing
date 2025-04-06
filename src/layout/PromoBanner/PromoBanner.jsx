@@ -1,13 +1,13 @@
-import "./PromoBanner.scss"
+import './PromoBanner.scss';
 
 const PromoBanner = () => {
 
 
   return (
     <div className="promo-banner">
-      I'M PROMO BANNER'
+      PROMO BANNER
     </div>
-  )
-}
+  );
+};
 
-export default PromoBanner
+export default PromoBanner;
