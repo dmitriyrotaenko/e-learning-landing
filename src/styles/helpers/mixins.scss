@@ -7,3 +7,8 @@
 @mixin fluid-typo($max, $min) {
   font-size: fluid($max, $min);
 }
+
+@mixin square($length) {
+  width: $length;
+  height: $length;
+}
