@@ -1,5 +1,9 @@
+
 body {
-  @include fluid-typo(10, 10);
+  @include fluid-typo(18, 14);
+
+  font-family: var(--font-family-base), sans-serif;
+  color: var(--color-grey-35);
 }
 
 .header-container {

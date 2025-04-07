@@ -2,10 +2,11 @@
 
 $container-desktop-width: 1600;
 $container-laptop-width: 1280;
+$container-mobile-width: 360;
 
 @function fluid($max: 100, $min: 10, $is-end-of-laptop: false) {
   $max-viewport-width: $container-desktop-width;
-  $min-viewport-width: 390;
+  $min-viewport-width: $container-mobile-width;
 
   @if $is-end-of-laptop {
     $min-viewport-width: $container-laptop-width;

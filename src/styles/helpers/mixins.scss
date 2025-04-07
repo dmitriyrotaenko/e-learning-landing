@@ -1,10 +1,12 @@
+@use 'functions' as *;
+
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin fluid-typo($max, $min) {
+@mixin fluid-typo($max: 48, $min: 16) {
   font-size: fluid($max, $min);
 }
 
