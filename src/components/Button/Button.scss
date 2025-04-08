@@ -1,0 +1,13 @@
+.button {
+  padding: fluid-to-laptop(14, 12) fluid(34, 20);
+  border-radius: var(--border-radius-s);
+  border: none;
+
+  &--transparent {
+    background-color: transparent;
+
+    @include hover {
+      color: var(--color-orange-50);
+    }
+  }
+}

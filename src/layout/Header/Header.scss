@@ -26,7 +26,7 @@
       color: var(--color-grey-15);
       text-decoration: none;
       padding: fluid-to-laptop(14, 12) fluid-to-laptop(24, 20);
-      border-radius: var(--border-radius-s);
+      border-radius: var(--border-radius-xs);
 
 
       @include hover {
@@ -42,6 +42,16 @@
   }
 
   &__actions {
+    display: flex;
     margin-left: auto;
+  }
+
+  &__login-button {
+    background-color: var(--color-orange-50);
+    color: var(--color-white);
+
+    @include hover {
+      background-color: var(--color-orange-70);
+    }
   }
 }

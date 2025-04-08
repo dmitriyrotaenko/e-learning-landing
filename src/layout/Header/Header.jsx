@@ -1,6 +1,7 @@
 import './Header.scss';
 import Logo from '@/components/Logo/index';
 import classNames from 'classnames';
+import Button from '@/components/Button';
 
 const menuItems = [
   {
@@ -54,8 +55,14 @@ const Header = ({ url }) => {
           </nav>
         </dialog>
         <div className="header__actions">
-          <button>Sign up</button>
-          <button>Log in</button>
+          <Button
+            label="Sign up"
+            mode="transparent"
+          />
+          <Button
+            label="Log in"
+            className="header__login-button"
+          />
         </div>
       </div>
     </header>
