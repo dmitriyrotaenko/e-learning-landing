@@ -15,3 +15,19 @@ $mobile-s: 480px;
     @content;
   }
 }
+
+@mixin hover($has-active-effect-on-mobile: false) {
+  @media(any-hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  @if($has-active-effect-on-mobile) {
+    @media(any-hover: none) {
+      &:active {
+        @content;
+      }
+    }
+  }
+}

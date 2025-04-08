@@ -8,7 +8,8 @@ const Global = props => {
 
   const {
     title,
-    children
+    children,
+    url
   } = props;
 
   return (
@@ -19,7 +20,7 @@ const Global = props => {
       </Head>
       <div className="header-container">
         <PromoBanner />
-        <Header />
+        <Header url={url}/>
       </div>
       {/*<Content>*/}
       {/*  {children}*/}
