@@ -14,3 +14,9 @@
   width: $length;
   height: $length;
 }
+
+@mixin focus-visible {
+  outline: 2px dashed var(--color-orange-50);
+  outline-offset: 4px;
+  transition-duration: 0s !important;
+}

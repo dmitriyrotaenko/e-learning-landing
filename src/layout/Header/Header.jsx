@@ -26,14 +26,13 @@ const menuItems = [
   }
 ];
 
-
 const Header = ({ url }) => {
 
   return (
     <header className="header">
       <div className="header__inner container">
         <Logo loading="eager"/>
-        <dialog open className="header__dialog">
+        <dialog open className="header__dialog-overlay">
           <nav className="header__navigation">
             <ul className="header__menu-list">
               {

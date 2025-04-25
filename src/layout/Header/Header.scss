@@ -1,5 +1,5 @@
 .header {
-  border-bottom: var(--border);
+  border-block-end: var(--border);
   padding-block: 20px;
 
   &__inner {
@@ -9,17 +9,23 @@
     column-gap: 50px; // TODO: Check without it
   }
 
-  &__dialog {
-    @include square(100%);
+  // &__dialog-overlay {
+  //   @include square(100%);
 
-    position: fixed;
-    inset: 0;
-    display: contents;
-  }
+  //   position: fixed;
+  //   inset: 0;
+  //   border: none;
+
+
+  //   @include tablet-above {
+  //     display: contents;
+  //   }
+  // }
 
   &__menu {
     &-list {
-      display: flex
+      display: flex;
+      column-gap: 8px;
     }
 
     &-link {
@@ -44,6 +50,7 @@
   &__actions {
     display: flex;
     margin-left: auto;
+    column-gap: 8px;
   }
 
   &__login-button {

@@ -27,3 +27,7 @@ select,
 svg * {
   transition-duration: var(--transition-duration);
 }
+
+:focus-visible {
+  @include focus-visible;
+}

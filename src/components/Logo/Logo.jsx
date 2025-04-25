@@ -1,5 +1,5 @@
 import './Logo.scss';
-import classNames from "classnames";
+import classNames from 'classnames';
 
 const Logo = props => {
 
@@ -10,6 +10,7 @@ const Logo = props => {
   return (
     <a
       className={classNames(className, 'logo')}
+      href='/'
     >
       <img
         src='/logo.svg'
