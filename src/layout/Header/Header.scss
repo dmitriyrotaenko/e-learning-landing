@@ -9,18 +9,17 @@
     column-gap: 50px; // TODO: Check without it
   }
 
-  // &__dialog-overlay {
-  //   @include square(100%);
+  &__dialog-overlay {
+    @include square(100%);
 
-  //   position: fixed;
-  //   inset: 0;
-  //   border: none;
+    position: fixed;
+    inset: 0;
+    border: none;
 
-
-  //   @include tablet-above {
-  //     display: contents;
-  //   }
-  // }
+    @include tablet-above {
+      display: contents;
+    }
+  }
 
   &__menu {
     &-list {
@@ -49,13 +48,15 @@
 
   &__actions {
     display: flex;
+    align-items: center;
     margin-left: auto;
-    column-gap: 8px;
+    column-gap: 20px;
   }
 
   &__login-button {
     background-color: var(--color-orange-50);
     color: var(--color-white);
+    padding: fluid-to-laptop(14, 12) fluid-to-laptop(24, 20);
 
     @include hover {
       background-color: var(--color-orange-70);

@@ -2,6 +2,7 @@ import './Header.scss';
 import Logo from '@/components/Logo/index';
 import classNames from 'classnames';
 import Button from '@/components/Button';
+import BurgerButton from '@/components/BurgerButton';
 
 const menuItems = [
   {
@@ -32,7 +33,7 @@ const Header = ({ url }) => {
     <header className="header">
       <div className="header__inner container">
         <Logo loading="eager"/>
-        <dialog open className="header__dialog-overlay">
+        <dialog className="header__dialog-overlay">
           <nav className="header__navigation">
             <ul className="header__menu-list">
               {
@@ -57,11 +58,13 @@ const Header = ({ url }) => {
           <Button
             label="Sign up"
             mode="transparent"
+            className="header__sign-up-button"
           />
           <Button
             label="Log in"
             className="header__login-button"
           />
+          <BurgerButton className="header__burger-button visible-tablet"/>
         </div>
       </div>
     </header>
