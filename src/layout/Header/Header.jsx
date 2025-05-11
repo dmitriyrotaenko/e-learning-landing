@@ -30,11 +30,17 @@ const menuItems = [
 const Header = ({ url }) => {
 
   return (
-    <header className="header">
+    <header
+      className="header"
+      data-js-overlay-menu=""
+    >
       <div className="header__inner container">
         <Logo loading="eager"/>
-        <dialog className="header__dialog-overlay">
-          <nav className="header__navigation">
+        <dialog
+          className="header__dialog-overlay"
+          data-js-overlay-menu-dialog=""
+        >
+          <nav className="header__menu">
             <ul className="header__menu-list">
               {
                 menuItems.map(({ label, path }, index) => (
@@ -64,7 +70,12 @@ const Header = ({ url }) => {
             label="Log in"
             className="header__login-button"
           />
-          <BurgerButton className="header__burger-button visible-tablet"/>
+          <BurgerButton
+            className="header__burger-button visible-tablet"
+            extraAttrs={{
+              'data-js-overlay-menu-burger-button': ''
+            }}
+          />
         </div>
       </div>
     </header>

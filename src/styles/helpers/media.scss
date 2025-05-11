@@ -1,6 +1,6 @@
-$laptop:   1440px;
-$tablet:   1023px;
-$mobile:   767px;
+$laptop: 1440px;
+$tablet: 1023px;
+$mobile: 767px;
 $mobile-s: 480px;
 
 @mixin laptop-above {
@@ -52,7 +52,7 @@ $mobile-s: 480px;
     }
   }
 
-  @if($has-active-effect-on-mobile) {
+  @if $has-active-effect-on-mobile {
     @media(any-hover: none) {
       &:active {
         @content;

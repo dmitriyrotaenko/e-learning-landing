@@ -7,6 +7,10 @@ module.exports = {
       version: 'detect'
     }
   },
+  env: {
+    browser: true,
+    node: true
+  },
   overrides: [
     {
       files: ['**/*.js', '**/*.jsx'],

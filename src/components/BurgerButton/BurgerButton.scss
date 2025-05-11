@@ -6,25 +6,6 @@
   background-color: transparent;
   border: none;
 
-	&.is-active { 
-		.burger-button__line {
-			stroke-dasharray: 90 207;
-			stroke-dashoffset: -134;
-
-			&--2 {
-				stroke-dasharray: 1 60;
-				stroke-dashoffset: -30;  
-			}
-		}
-	}
-	
-	&:not(.is-active) {
-		.burger-button__line--bottom {
-			stroke-dasharray: 30 207;
-			stroke-dashoffset: -30;
-		}
-	}
-	
 	&__line {
 		fill: none;
 		stroke: var(--color-grey-15);
@@ -36,8 +17,27 @@
 			stroke-dashoffset var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
-	&--2 {
+	&--mid {
 		stroke-dasharray: 60 60;  
+	}
+
+	&.is-active { 
+		.burger-button__line {
+			stroke-dasharray: 90 207;
+			stroke-dashoffset: -134;
+
+			&--mid {
+				stroke-dasharray: 1 60;
+				stroke-dashoffset: -30;  
+			}
+		}
+	}
+	
+	&:not(.is-active) {
+		.burger-button__line--bottom {
+			stroke-dasharray: 30 207;
+			stroke-dashoffset: -30;
+		}
 	}
 }
 

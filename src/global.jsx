@@ -17,9 +17,10 @@ const Global = props => {
       <Head>
         <title>Lorna | {title}</title>
         <meta property="description" content="description" />
+        <script src="/src/main.js" type="module" />
       </Head>
       <div className="header-container">
-        <PromoBanner />
+        {/*<PromoBanner />*/}
         <Header url={url}/>
       </div>
       {/*<Content>*/}
