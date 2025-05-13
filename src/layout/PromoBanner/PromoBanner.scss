@@ -1,0 +1,26 @@
+.promo-banner-container {
+  //width: 100%;
+}
+
+.promo-banner {
+  font-size: fluid-to-laptop(18, 14);
+  background-color: var(--color-orange-50);
+  color: var(--color-white);
+  text-align: center;
+  padding: fluid-to-laptop(14, 10) 16px;
+  border-radius: var(--border-radius-s);
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__icon {
+    margin-inline-start: 23px;
+
+    @include mobile-s {
+      margin-inline-start: 12px;
+    }
+
+  }
+}
