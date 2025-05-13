@@ -9,3 +9,14 @@
 @mixin fluid-typo($max: 48, $min: 16) {
   font-size: fluid($max, $min);
 }
+
+@mixin square($length) {
+  width: $length;
+  height: $length;
+}
+
+@mixin focus-visible {
+  outline: 2px dashed var(--color-orange-50);
+  outline-offset: 4px;
+  transition-duration: 0s !important;
+}

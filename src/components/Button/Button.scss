@@ -1,0 +1,14 @@
+.button {
+  border-radius: var(--border-radius-s);
+  border: none;
+  text-align: center;
+  user-select: none;
+
+  &--transparent {
+    background-color: transparent;
+
+    @include hover {
+      color: var(--color-orange-50);
+    }
+  }
+}

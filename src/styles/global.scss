@@ -17,3 +17,17 @@ body {
     padding-block-start: 40px;
   }
 }
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+:focus-visible {
+  @include focus-visible;
+}
