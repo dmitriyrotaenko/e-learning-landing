@@ -1,0 +1,65 @@
+.welcome-banner {
+  margin-block:  var(--section-padding-y);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: fluid-to-laptop(60, 50);
+
+  &__header {
+    text-align: center;
+  }
+
+  &__icon-wrapper {
+    display: inline-flex;
+    background-color: var(--color-orange-95);
+    padding: fluid-to-laptop(14, 12);
+    border-radius: var(--border-radius-xs);
+    margin-right: 10px;
+  }
+  
+  &__title {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: fluid-to-laptop(20, 16);
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-white-99);
+    padding: fluid-to-laptop(18, 14) fluid-to-laptop(20, 16);
+    border: var(--border);
+    border-radius: var(--border-radius-m);
+    font-size: fluid(48, 16);
+
+    &--accented {
+      color: var(--color-orange-50);
+    }
+  }
+
+  &__subheading {
+    margin-block-end: fluid-to-laptop(10, 6);
+    font-size: fluid(38, 24);
+    font-weight: 500;
+  }
+
+  &__actions {
+    display: flex;
+    column-gap: 12px;
+
+    > .button {
+      padding: fluid-to-laptop(18, 14) fluid-to-laptop(24, 20);
+    }
+  }
+
+  &__explore-btn {
+    font-weight: 600;
+  }
+
+  &__pricing-btn {
+    font-weight: 500;
+    color: inherit;
+  }
+}
