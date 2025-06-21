@@ -61,6 +61,8 @@ const Header = ({ url }) => {
           </nav>
         </dialog>
         <div className="header__actions">
+          {/* TODO: Use modes for colors */}
+          {/* TODO: Do smth with text wrap on small screens < mobile-s */}
           <Button
             label="Sign up"
             mode="transparent"

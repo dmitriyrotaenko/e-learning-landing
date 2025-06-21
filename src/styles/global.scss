@@ -4,6 +4,7 @@ body {
 
   font-family: var(--font-family-base), sans-serif;
   color: var(--color-grey-35);
+  background-color: var(--color-white-97);
 }
 
 .header-container {
@@ -17,6 +18,19 @@ body {
     padding-block-start: 40px;
   }
 }
+
+h1, .h1 {
+  @include fluid-typo(48, 28);
+
+  font-weight: 600;
+}
+
+h2, .h2 {
+  @include fluid-typo(38, 24);
+
+  font-weight: 500;
+}
+
 
 a,
 button,

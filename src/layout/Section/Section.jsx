@@ -12,7 +12,7 @@ const Section = (props) => {
   } = props;
 
   return (
-    <section className={classNames('section', className)}>
+    <section className={classNames('section container', className)}>
       <header className="section__header">
         <div className="section__info">
           <h2 className="section__title">{title}</h2>

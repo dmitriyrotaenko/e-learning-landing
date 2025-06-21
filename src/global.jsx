@@ -3,6 +3,7 @@ import '@/styles';
 import { Head } from 'minista';
 import Header from '@/layout/Header';
 import PromoBanner from '@/layout/PromoBanner';
+import Content from '@/layout/Content';
 
 const Global = props => {
 
@@ -23,9 +24,9 @@ const Global = props => {
         <PromoBanner />
         <Header url={url}/>
       </div>
-      {/*<Content>*/}
-      {/*  {children}*/}
-      {/*</Content>*/}
+      <Content>
+        {children}
+      </Content>
       {/*<Footer />*/}
     </>
   );
