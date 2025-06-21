@@ -1,7 +1,3 @@
-.promo-banner-container {
-  //width: 100%;
-}
-
 .promo-banner {
   font-size: fluid-to-laptop(18, 14);
   background-color: var(--color-orange-50);
@@ -21,6 +17,5 @@
     @include mobile-s {
       margin-inline-start: 12px;
     }
-
   }
 }

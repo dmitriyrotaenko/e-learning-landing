@@ -3,12 +3,31 @@
   border: none;
   text-align: center;
   user-select: none;
+  text-decoration: none;
+  cursor: pointer;
 
   &--transparent {
     background-color: transparent;
 
     @include hover {
       color: var(--color-orange-50);
+    }
+  }
+
+  &--white {
+    background-color: var(--color-white);
+
+    @include hover {
+      color: var(--color-orange-50);
+    }
+  }
+
+  &--primary {
+    background-color: var(--color-orange-50);
+    color: var(--color-white);
+
+    @include hover {
+      background-color: var(--color-orange-70);
     }
   }
 }

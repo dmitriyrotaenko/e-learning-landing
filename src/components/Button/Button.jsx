@@ -10,6 +10,7 @@ const Button = props => {
     /*
     * no value: default button with background
     * transparent
+    * white
     * */
     mode,
     href,
