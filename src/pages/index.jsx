@@ -1,6 +1,6 @@
 import WelcomeBanner from '@/sections/WelcomeBanner/WelcomeBanner';
 import Partners from '@/sections/Partners';
-import Hero from '@/sections/Hero';
+import VideoStub from '@/sections/VideoStub';
 
 export const metadata = {
   title: 'Home'
@@ -12,7 +12,7 @@ export default function() {
     <>
       <WelcomeBanner />
       <Partners />
-      <Hero />
+      <VideoStub />
     </>
   );
 }
