@@ -2,7 +2,6 @@ import './WelcomeBanner.scss';
 import Icon from '@/components/Icon/index.js';
 import Button from '@/components/Button';
 
-
 const WelcomeBanner = () => {
   return (
     <section className="welcome-banner container">
