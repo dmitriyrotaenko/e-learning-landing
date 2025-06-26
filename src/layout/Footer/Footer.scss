@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    padding-block: fluid-to-laptop(50, 20) fluid-to-laptop(30, 20);
+    border-top: var(--border);
+
+    @include mobile-s {
+      padding-block-end: 24px;
+    }
+  }
+}
