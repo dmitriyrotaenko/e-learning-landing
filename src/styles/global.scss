@@ -31,6 +31,11 @@ h2, .h2 {
   font-weight: 500;
 }
 
+h4, .h4 {
+  @include fluid-typo(20, 18);
+
+  font-weight: 600;
+}
 
 a,
 button,
@@ -40,6 +45,11 @@ textarea,
 select,
 svg * {
   transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 :focus-visible {
