@@ -3,7 +3,9 @@ import classNames from 'classnames';
 
 const Logo = props => {
 
-  const { className, loadingStrategy = 'lazy' } = props;
+  const { className, loadingStrategy } = props;
+
+
 
   return (
     <a

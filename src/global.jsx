@@ -2,7 +2,6 @@ import '@/styles';
 
 import { Head } from 'minista';
 import Header from '@/layout/Header';
-import Footer from '@/layout/Footer';
 import PromoBanner from '@/layout/PromoBanner';
 import Content from '@/layout/Content';
 
@@ -28,7 +27,7 @@ const Global = props => {
       <Content>
         {children}
       </Content>
-      <Footer />
+      {/*<Footer />*/}
     </>
   );
 };

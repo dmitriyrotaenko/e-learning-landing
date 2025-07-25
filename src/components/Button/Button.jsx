@@ -1,6 +1,5 @@
 import './Button.scss';
 import classNames from 'classnames';
-import Icon from '@/components/Icon';
 
 const Button = props => {
   const {
@@ -12,14 +11,10 @@ const Button = props => {
     * no value: default button with background
     * transparent
     * white
-    * white-97
     * */
     mode,
     href,
-    target,
-    iconName,
-    iconBeforeText = true,
-    hasFill = true
+    target
   } = props;
 
   const Component = href ? 'a' : 'button';
@@ -29,14 +24,6 @@ const Button = props => {
 
   const elementProps = isLink ? linkProps : buttonProps;
 
-  const IconComponent = iconName && (
-    <Icon
-      className="button__icon"
-      name={iconName}
-      hasFill={hasFill}
-    />
-  );
-
   return (
     <Component
       className={classNames(className, 'button', {
@@ -44,7 +31,6 @@ const Button = props => {
       })}
       {...elementProps}
     >
-      {iconBeforeText && IconComponent}
       {
         isLabelVisible && (
           <span>{label}</span>
