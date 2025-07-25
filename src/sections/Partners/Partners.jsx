@@ -1,4 +1,5 @@
 import './Partners.scss';
+import Icon from '@/components/Icon';
 
 const partners = [
   'zapier',
@@ -21,15 +22,13 @@ const Partners = () => {
               className="partners__item"
               key={index}
             >
-              <img
+              <Icon
+                name={partnerName}
                 className="partners__item-logo"
-                src={`/partners/${partnerName}.svg`}
-                alt={`${partnerName} logo`}
-                width={56}
-                height={28}
+                hasFill
               />
             </li>
-          ))
+          )) 
         }
       </ul>
     </section>
