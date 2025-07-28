@@ -1,3 +1,24 @@
 .section {
-  margin-block: var(--section-padding-y);
+  padding-block: var(--section-padding-y);
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    &:has(.section__description) {
+      align-items: flex-end;
+
+      @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid-to-laptop(6, 4);
+  }
 }

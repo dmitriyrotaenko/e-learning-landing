@@ -7,18 +7,18 @@ const menuItems = [
   {
     title: 'Home',
     links: [
-      {label: 'Benefits', path: '/benefits'},
-      {label: 'Courses', path: '/courses'},
-      {label: 'Testimonials', path: '/testimonials'},
-      {label: 'FAQ', path: '/faq'}
+      { label: 'Benefits', path: '/benefits' },
+      { label: 'Courses', path: '/courses' },
+      { label: 'Testimonials', path: '/testimonials' },
+      { label: 'FAQ', path: '/faq' }
     ]
   },
   {
     title: 'About us',
     links: [
-      {label: 'Company', path: '/company'},
-      {label: 'Achievements', path: '/achievements'},
-      {label: 'Goal', path: '/goal'}
+      { label: 'Company', path: '/company' },
+      { label: 'Achievements', path: '/achievements' },
+      { label: 'Goal', path: '/goal' }
     ]
   },
   {
@@ -82,14 +82,14 @@ const Footer = () => {
         </address>
         <nav className="footer__menu">
           {
-            menuItems.map(({title, links, socialLinks}, index) => (
+            menuItems.map(({ title, links, socialLinks }, index) => (
               <div className="footer__menu-column" key={index}>
                 <a href="/" className="footer__menu-title h4">{title}</a>
                 {
                   links && (
                     <ul className="footer__menu-list">
                       {
-                        links.map(({label, path}, index) => (
+                        links.map(({ label, path }, index) => (
                           <li className="footer__menu-item" key={index}>
                             <a href={path} className="footer__menu-link">{label}</a>
                           </li>

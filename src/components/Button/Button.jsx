@@ -47,7 +47,7 @@ const Button = props => {
       {iconBeforeText && IconComponent}
       {
         isLabelVisible && (
-          <span>{label}</span>
+          <span className="button__label">{label}</span>
         )
       }
     </Component>

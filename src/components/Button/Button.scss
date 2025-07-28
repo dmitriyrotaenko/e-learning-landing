@@ -2,11 +2,14 @@
   @include flex-center;
 
   border-radius: var(--border-radius-s);
+  padding: fluid-to-laptop(18, 14) fluid-to-laptop(24, 20);
   border: none;
   text-align: center;
   user-select: none;
   text-decoration: none;
   cursor: pointer;
+  white-space: nowrap;
+  font-weight: 600;
 
   &:has(.button__icon:only-child) {
     @include square(fluid-to-laptop(52, 44));

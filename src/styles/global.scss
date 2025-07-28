@@ -28,6 +28,7 @@ h1, .h1 {
 h2, .h2 {
   @include fluid-typo(38, 24);
 
+  color: var(--color-grey-15);
   font-weight: 600;
 }
 
