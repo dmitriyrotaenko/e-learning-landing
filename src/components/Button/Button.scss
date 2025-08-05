@@ -2,17 +2,13 @@
   @include flex-center;
 
   border-radius: var(--border-radius-s);
+  padding: fluid-to-laptop(18, 14) fluid-to-laptop(24, 20);
   border: none;
   text-align: center;
   user-select: none;
   text-decoration: none;
   cursor: pointer;
-
-  &:has(.button__icon:only-child) {
-    @include square(fluid-to-laptop(52, 44));
-
-    padding: 0;
-  }
+  white-space: nowrap;
 
   &--transparent {
     background-color: transparent;
@@ -32,6 +28,10 @@
 
   &--white-97 {
     background-color: var(--color-white-97);
+  }
+
+  &--white-99 {
+    background-color: var(--color-white-99);
   }
 
   &--primary {

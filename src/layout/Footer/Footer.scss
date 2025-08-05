@@ -41,6 +41,7 @@
 
   &__menu {
     --footer-menu-columns: 3;
+
     display: grid;
     grid-template-columns: repeat(var(--footer-menu-columns), 1fr);
     gap: 24px fluid(30, 10);
@@ -49,7 +50,6 @@
     @include mobile-s {
       --footer-menu-columns: 2;
     }
-
 
     &-title {
       color: var(--color-grey-15);

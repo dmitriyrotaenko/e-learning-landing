@@ -1,0 +1,71 @@
+.ordered-card-list {
+  --columns-number: 3;
+
+  display: grid;
+  grid-template-columns: repeat(var(--columns-number), 1fr);
+  list-style: none;
+  counter-reset: custom-ordered-list;
+  gap: 20px;
+
+  @include tablet {
+    --columns-number: 2;
+  }
+
+  @include mobile-s {
+    --columns-number: 1;
+  }
+
+  &__item {
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-l);
+    counter-increment: custom-ordered-list;
+    padding: fluid(50, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: fluid(50, 30);
+
+    @include tablet {
+      border-radius: var(--border-radius-m);
+    }
+
+    &::before {
+      display: block;
+      font-size: fluid(80, 50);
+      font-weight: 600;
+      text-align: right;
+      color: var(--color-grey-15);
+      content: "0" counter(custom-ordered-list);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid-to-laptop(14, 10);
+  }
+
+  &__button {
+    align-self: flex-end;
+    border: var(--border);
+    border-radius: var(--border-radius-s);
+    padding: fluid-to-laptop(20, 14);
+
+    @include mobile {
+      border-radius: var(--border-radius-xs);
+    }
+
+    @include hover {
+      background-color: var(--color-orange-50);
+
+      svg {
+        fill: var(--color-white-99);
+      }
+    }
+
+    svg {
+      fill: var(--color-orange-50);
+    }
+  }
+}
+
