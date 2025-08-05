@@ -9,13 +9,6 @@
   text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
-  font-weight: 600;
-
-  &:has(.button__icon:only-child) {
-    @include square(fluid-to-laptop(52, 44));
-
-    padding: 0;
-  }
 
   &--transparent {
     background-color: transparent;
@@ -35,6 +28,10 @@
 
   &--white-97 {
     background-color: var(--color-white-97);
+  }
+
+  &--white-99 {
+    background-color: var(--color-white-99);
   }
 
   &--primary {

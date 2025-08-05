@@ -8,7 +8,7 @@
     position: relative;
     height: fluid(760, 240);
     background: url('../../assets/images/vid-stub.jpg') top / cover no-repeat;
-    border-radius: var(--border-radius-m);
+    border-radius: var(--border-radius-l);
 
     &::before {
       content: '';

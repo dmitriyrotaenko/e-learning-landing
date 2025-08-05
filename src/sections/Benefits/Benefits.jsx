@@ -1,6 +1,7 @@
 import Button from '@/components/Button';
 import './Benefits.scss';
 import Section from '@/layout/Section';
+import OrderedCardList from '@/components/OrderedCardList';
 
 
 const Benefits = () => {
@@ -18,7 +19,7 @@ const Benefits = () => {
       )}
     >
       <div className="benefits">
-
+        <OrderedCardList/>
       </div>
     </Section>
   );

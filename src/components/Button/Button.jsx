@@ -13,6 +13,7 @@ const Button = props => {
     * transparent
     * white
     * white-97
+    * white-99
     * */
     mode,
     href,
