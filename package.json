@@ -6,9 +6,10 @@
     "start": "minista",
     "build": "minista build",
     "preview": "minista preview",
-    "lint": "eslint .",
+    "lint": "eslint . --ext .js,.jsx",
     "stylelint": "npx stylelint \"**/*.scss\"",
-    "lint:fix": "eslint . --fix && npx stylelint \"**/*.scss\" --fix"
+    "lint:fix": "eslint . --ext .js,.jsx --fix && npx stylelint \"**/*.scss\" --fix",
+    "postinstall": "echo 'Running ESLint setup...' && npx eslint --version"
   },
   "prettier": {
     "semi": false
