@@ -1,4 +1,3 @@
-
 body {
   @include fluid-typo(18, 14);
 
@@ -27,6 +26,13 @@ h1, .h1 {
 
 h2, .h2 {
   @include fluid-typo(38, 24);
+
+  color: var(--color-grey-15);
+  font-weight: 600;
+}
+
+h3, .h3 {
+  @include fluid-typo(24, 20);
 
   color: var(--color-grey-15);
   font-weight: 600;
